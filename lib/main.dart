@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fooddeliveryapp/pages/botttom_nav.dart';
 import 'package:fooddeliveryapp/pages/home.dart';
 
 void main() {
@@ -34,7 +35,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // home: const MyHomePage(title: 'Flutter Demo Home Page'),
-      home: Home(),
+      // home: Home(),  
+      home: BottomNav(),
     );
   }
 }
