@@ -40,7 +40,7 @@ class _BottomNavState extends State<BottomNav> {
         height: 65,
         backgroundColor: Colors.white,
         color: Colors.black,
-        animationDuration: Duration(microseconds: 700),
+        animationDuration: Duration(microseconds: 600),
         onTap: (int index){
           setState(() {
             currentTabIndex = index;
