@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "931836881753",
+    "project_id": "fooddilveryapp-30d35",
+    "storage_bucket": "fooddilveryapp-30d35.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931836881753:android:982cc2930adef499ebba48",
+        "android_client_info": {
+          "package_name": "com.example.fooddeliveryapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuBX6CkN0tncI9VqM2H3FgdUqiXGqvS7A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
