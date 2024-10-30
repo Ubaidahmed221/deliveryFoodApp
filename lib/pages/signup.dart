@@ -133,9 +133,10 @@ class _SignUpState extends State<SignUp> {
                       ),
                     ),
                     SizedBox(height: 20.0,),
-                    Container(
-                      alignment: Alignment.topRight,
-                      child: Text("Forget Password ", style: AppWidget.SemiBoldTextFeildStyle(),)),
+                    // Container(
+                    //   alignment: Alignment.topRight,
+                    //   child: Text("Forget Password ", style: AppWidget.SemiBoldTextFeildStyle(),)
+                    //   ),
                        SizedBox(height: 80.0,),
                       GestureDetector(
                         onTap: () async{

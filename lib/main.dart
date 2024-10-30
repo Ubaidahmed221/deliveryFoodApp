@@ -5,6 +5,7 @@
   import 'package:fooddeliveryapp/pages/login.dart';
   import 'package:fooddeliveryapp/pages/Onboard.dart';
   import 'package:fooddeliveryapp/pages/signup.dart';
+import 'package:fooddeliveryapp/pages/wallet.dart';
   import 'firebase_options.dart';
 
   // void main() async {
@@ -56,6 +57,7 @@
         // home: Home(),  
         // home: BottomNav(),
         home: Onboard(),
+        // home: Wallet(),
       );
     }
   }
