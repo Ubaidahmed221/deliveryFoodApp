@@ -30,6 +30,10 @@ class _SignUpState extends State<SignUp> {
           backgroundColor: Colors.redAccent,
           content: Text("Registered Successfully",style: TextStyle(fontSize: 20.0),))));
           // ignore: use_build_context_synchronously
+
+          
+
+
           Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => BottomNav()));
       } on FirebaseException catch(e){
         if(e.code == 'weak-password'){

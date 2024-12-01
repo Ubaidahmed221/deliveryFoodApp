@@ -1,11 +1,14 @@
   import 'package:firebase_core/firebase_core.dart';
   import 'package:flutter/material.dart';
+  import 'package:flutter/foundation.dart';
+import 'package:flutter_stripe/flutter_stripe.dart';
   import 'package:fooddeliveryapp/pages/botttom_nav.dart';
   import 'package:fooddeliveryapp/pages/home.dart';
   import 'package:fooddeliveryapp/pages/login.dart';
   import 'package:fooddeliveryapp/pages/Onboard.dart';
   import 'package:fooddeliveryapp/pages/signup.dart';
 import 'package:fooddeliveryapp/pages/wallet.dart';
+import 'package:fooddeliveryapp/widget/app_constant.dart';
   import 'firebase_options.dart';
 
   // void main() async {
@@ -13,10 +16,26 @@ import 'package:fooddeliveryapp/pages/wallet.dart';
   //   await Firebase.initializeApp();
   //   runApp(const MyApp());
   // }
-  void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
+//   void main() async {
+//   WidgetsFlutterBinding.ensureInitialized();
+//   Stripe.publishableKey= publishableKey;
   
-  // Initialize Firebase with the generated options
+//   // Initialize Firebase with the generated options
+//   await Firebase.initializeApp(
+//     options: DefaultFirebaseOptions.currentPlatform,
+//   );
+
+//   runApp(const MyApp());
+// }
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Initialize Stripe only for non-web platforms
+  if (!kIsWeb) {
+    Stripe.publishableKey = "pk_test_51Oq8lcSBbXhpf5GcldGLzdOax6zYX3FQT3l8wOYXwHMdSuBlIfsqolxvkpP947Ek9bDCW56ODG8zvcKK9J11rFVv00uPOZoQuq";
+  }
+
+  // Initialize Firebase
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );

@@ -28,7 +28,7 @@ class _BottomNavState extends State<BottomNav> {
     order = Order();
     profile = Profile();
     wallet= Wallet();
-    pages = [homepage,order,profile,wallet];
+    pages = [homepage,order,wallet,profile];
     // TODO: implement initState
     super.initState();
   }
